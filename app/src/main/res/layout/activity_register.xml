@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".Activitys.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="REGISTER FORM"
+                android:textColor="#795548"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/emp_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="GV_ID"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="normal"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Full Name"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="normal"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="normal"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Password"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="normal"
+                android:inputType="textPassword"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Moblie"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="normal"
+                />
+
+            <RadioGroup
+                android:id="@+id/radiogp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#795548"
+                    android:text="Male"
+                    android:textColor="#796648"
+                    />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#795548"
+                    android:text="Female"
+                    android:textColor="#796648"
+                    />
+
+            </RadioGroup>
+
+
+            <CheckBox
+                android:id="@+id/accessOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#796648"
+                android:text="Access for Create Account"
+                android:textColor="#795548"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+            </CheckBox>
+
+
+            <CheckBox
+                android:id="@+id/accessTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#796648"
+                android:text="Access for GroupClass / Pointpt"
+                android:textColor="#795548"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+            </CheckBox>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

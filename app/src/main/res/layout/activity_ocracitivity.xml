@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Activitys.OCRAcitivity">
+
+    <TextView
+        android:id="@+id/tv_thong_tin_sinh_vien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
+        android:gravity="center"
+        android:text="Student information"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student code:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/et_masvocr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_masvocr" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/et_masvocr"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:hint="Student code:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Term score:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/et_diemgk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_diemgk" />
+
+    <EditText
+        android:id="@+id/et_diemgk"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Mid term score:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_malopocr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject code:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/et_malopocr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_malopocr" />
+
+    <EditText
+        android:id="@+id/et_malopocr"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Subject code:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_masvocr" />
+
+
+    <TextView
+        android:id="@+id/tv_anh_chupocr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/grad"
+        android:gravity="center"
+        android:text="Photograph"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_diemgk"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_anh_chupocr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_anh_chupocr" />
+
+    <Button
+        android:id="@+id/buttonocr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

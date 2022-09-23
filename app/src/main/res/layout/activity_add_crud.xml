@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AddCrudActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    >
+<!--    <TextView-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Thêm sinh viên"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/tv"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập Điểm"-->
+<!--        android:id="@+id/edtDiemad"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:layout_below="@+id/tv"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"/>-->
+
+
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập Mã Môn"-->
+<!--        android:id="@+id/edtMaMonad"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:layout_below="@+id/edtDiemad"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"/>-->
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập Mã Sinh Viên"-->
+<!--        android:id="@+id/edtMaSVad"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:layout_below="@+id/edtMaMonad"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"/>-->
+<!--    <LinearLayout-->
+
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/edtMaSVad"-->
+<!--        android:weightSum="2"-->
+<!--        android:orientation="horizontal">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="center">-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="thêm"-->
+<!--                android:id="@+id/btnadd"-->
+<!--                android:layout_centerInParent="true"/>-->
+<!--        </RelativeLayout>-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="center">-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Huỷ"-->
+<!--                android:id="@+id/btncancel"-->
+<!--                android:layout_centerInParent="true"/>-->
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@drawable/grad"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Add Points Students"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/profile_email"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/profile_name"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:text=""-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:fontFamily="sans-serif"-->
+        <!--            android:layout_marginTop="15sp"-->
+        <!--            />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rellay1"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtDiemad"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Input Points"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    app:met_floatingLabel="normal"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinnertext1"
+                        android:layout_width="161dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="200dp" />
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/edtsvidad"-->
+<!--                        android:layout_width="207dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="-198dp"-->
+<!--                        android:layout_marginRight="80dp"-->
+
+<!--                        android:padding="5dp"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="15dp"-->
+<!--                        app:met_floatingLabel="normal"-->
+
+<!--                        />-->
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <Spinner
+                        android:id="@+id/spinnertext2"
+                        android:layout_width="161dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="200dp" />
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/edtlopidad"-->
+<!--                        android:layout_width="207dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="-198dp"-->
+<!--                        android:layout_marginRight="80dp"-->
+<!--                        android:hint="Input Code Student"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="15dp"-->
+<!--                        app:met_floatingLabel="normal"-->
+
+<!--                        />-->
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+<!--                <com.rengwuxian.materialedittext.MaterialEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Input Class Students"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="15dp"-->
+<!--                    app:met_floatingLabel="normal"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:id="@+id/edtlopidad"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/colorPrimaryDark"-->
+
+<!--                    />-->
+
+
+
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/update"-->
+<!--                    android:layout_width="145dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="50dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="50dp"-->
+<!--                    android:background="@drawable/custom_button"-->
+<!--                    android:text="Change Password"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/colorPrimaryDark" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/update"-->
+<!--                    android:layout_width="147dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="50dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="50dp"-->
+<!--                    android:background="@drawable/custom_button"-->
+<!--                    android:text="Change Password"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/colorPrimaryDark" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:paddingTop="30dp"-->
+<!--                    android:layout_below="@+id/group_login"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:weightSum="3">-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btnadd"-->
+<!--                                        android:layout_width="145dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+
+<!--                                        android:layout_marginLeft="40dp"-->
+<!--                                        android:layout_marginTop="20dp"-->
+<!--                                        android:layout_marginRight="90dp"-->
+<!--                                        android:background="@drawable/custom_button"-->
+<!--                                        android:text="Add"-->
+<!--                                        android:textAllCaps="false"-->
+<!--                                        android:textColor="@color/colorPrimaryDark" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btncancel"-->
+<!--                        android:layout_width="147dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="-40dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_marginRight="50dp"-->
+<!--                        android:background="@drawable/custom_button"-->
+<!--                        android:text="Cancel"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/colorPrimaryDark" />-->
+
+<!--                </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!--            android:id="@+id/bt_list"-->
+
+
+                <Button
+                    android:id="@+id/btnadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="Add"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="Cancel"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

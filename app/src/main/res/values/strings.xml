@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DoAnTotNghiep</string>
+    <string name="prefLoginState" />
+    <string name="close">CLose</string>
+    <string name="open">Open</string>
+
+    <string name="URL_USD">http://192.168.1.192/</string>
+</resources>

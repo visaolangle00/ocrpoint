@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/register"
+        android:title="Register"
+        android:icon="@drawable/ic_create_new_folder_black_24dp"
+        />
+
+    <item
+        android:id="@+id/change_pword"
+        android:title="ChangePassword"
+        android:icon="@drawable/ic_track_changes_black_24dp"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_all_out_black_24dp"
+        />
+
+    <item
+        android:id="@+id/selectsubjects"
+        android:title="GroupClass"
+        android:icon="@drawable/ic_subject_black_24dp"
+        />
+
+    <item
+        android:id="@+id/ocr"
+        android:title="OCR"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/uploadimage"-->
+<!--         android:title="UploadImage"-->
+<!--        android:icon="@drawable/ic_remove_red_eye_black_24dp"-->
+<!--        />-->
+
+
+    <item
+        android:id="@+id/pointpt"
+        android:title="Pointpt"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

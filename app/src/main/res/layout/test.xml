@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Thu XXX"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Subject Name:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:layout_weight="1.0"
+            android:paddingBottom="10dp"
+            android:text="Right side"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Schedule:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:layout_weight="1.0"
+            android:paddingBottom="10dp"
+            android:text="Right side"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Subject ID:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:layout_weight="1.0"
+            android:paddingBottom="10dp"
+            android:text="Right side"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Number:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Right side"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Teacher ID:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Right side"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
